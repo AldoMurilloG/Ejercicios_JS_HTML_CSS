@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Enunciado 2</title>
+</head>
+<body>
+    <h1>Enunciado 3.</h1> 
+<h4>A partir del siguiente array que se proporciona:</h4>
+<h4>Var valores = [true, 5, false, "hola", "adiós", 2];</h4>
+<h4>Determinar el resultado de las cinco operaciones matemáticas realizadas con los dos elementos numéricos.</h4>
+<h4>Mostrar mediante un Alert, todas las posiciones del array que no sean número.</h4>
+    <script>
+
+let valores = [true, 5, false, "hola", "adiós", 2];
+let numeros = valores.filter(function(valor) {
+  return typeof valor === 'number';
+});
+// Operaciones matemáticas
+    if (numeros.length === 2) {
+        var suma = numeros[0] + numeros[1];
+        var resta = numeros[0] - numeros[1];
+        var multiplicacion = numeros[0] * numeros[1];
+        var division = numeros[0] / numeros[1];
+// Mostrar los resultados por consola
+        console.log("Suma:", suma);
+        document.write("<u>Suma:</u> ", suma);
+        console.log("Resta:", resta);
+        document.write("</br><u>Resta:</u> ", resta);
+        console.log("Multiplicación:", multiplicacion);
+        document.write("</br><u>Multiplicación:</u> ", multiplicacion);
+        console.log("División:", division);
+        document.write("</br><u>División:</u> ", division);
+    } 
+    else {
+        console.log("No se encontraron dos números en el arreglo.");
+        document.write("No se encontraron dos números en el arreglo.");
+    }
+let Elementos = valores.filter(function(element) {
+    return typeof element === 'string' || element === false || element === true;
+});
+    Elementos.forEach(function(elemento, indice) {
+        
+        console.log(elemento, indice);
+        document.write("</br><u>Elemento:</u> " + elemento + ", <u>índice:</u> " + indice);
+    });
+</script>
+</body>
+</html>

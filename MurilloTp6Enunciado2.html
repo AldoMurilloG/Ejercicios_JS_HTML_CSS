@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Enunciado 2</title>
+</head>
+<body>
+<h1> Enunciado 2. </h1>
+<h4>Solicitar el ingreso de la edad de una persona y si es mayor de edad (mayor de 18) emitir un mensaje por consola “Tú tienes …… años, ya eres mayor de edad”</h4>
+
+    <script>
+        function mayOMenor(edad) {
+            if( edad > 17 ){
+                console.log("“Tú tienes " + edad + "años, ya eres mayor de edad”");
+                document.write("“Tú tienes " + edad + "años, ya eres mayor de edad”");
+            }
+            else{
+                console.log("“Tú tienes " + edad + "años, no eres mayor de edad”");
+                document.write("“Tú tienes " + edad + "años, no eres mayor de edad”");
+            }
+        }
+    //Llamado 
+        let edad = parseInt(prompt("Ingrese su edad"));
+        mayOMenor(edad);
+    </script>
+</body>
+</html>

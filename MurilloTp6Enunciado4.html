@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Enunciado 4</title>
+</head>
+<body>
+    <h1>Enunciado 4.</h1>
+<h4>Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar los doce nombres más su posición por consola, en el documento y en una ventana de alerta. </h4>
+    <script>
+        let meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octumbre', 'Noviembre', 'Diciembre'];
+        meses.forEach(function(element,i) {
+            console.log("Mes de: " + element + ", con indice [ " + i + " ]" );
+            document.write("Mes de: " + element + ", con indice [ " + i + " ]</br>" );
+            alert("Mes de: " + element + ", con indice [ " + i + " ]" );
+        });
+    </script>
+</body>
+</html>

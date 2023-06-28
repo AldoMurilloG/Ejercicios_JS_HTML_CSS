@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Enunciado 1. </h1>
+<h4>Teniendo en cuenta el material de Operadores, Arreglos y Estructuras de control disponibles en plataforma realizar un script con las siguientes peticiones:</h4>
+<h4>Solicite el ingreso del mes de nacimiento de una persona, y dependiendo de este vamos nos indique el signo del zodiaco.</h4>
+
+    <script>
+        let signos = ['Capricornio','Aries', 'Tauro', 'Géminis', 'Cáncer', 'Leo', 'Sagitario', 'Libra',  'Virgo', 'Escorpio', 'Acuario', 'Piscis'];
+
+function zodiaco(mes) {
+    for (let i = 0; i < signos.length; i++) {
+        
+        if( mes - 1 == i) {
+            console.log("Tu signo del zodíaco es: " + signos[i]);
+            document.write("<h2>Tu signo del zodíaco es: " + signos[i] + "</h2>");
+        }
+    }
+}
+
+// Llamado
+let mes = parseInt(prompt("Ingrese el número de su mes"));
+zodiaco(mes);
+    </script>
+</body>
+</html>
